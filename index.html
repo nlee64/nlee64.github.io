@@ -7,7 +7,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>Welcome!</title>
     <link rel="stylesheet" href="styles.css" type="text/css" />
-    <script src="https://kit.fontawesome.com/a076d05399.js" crossorigin="anonymous"></script>
+    <!-- google icon CSS -->
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
 </head>
 
 <body>
@@ -19,9 +20,10 @@
                 <h1>NARI LEE</h1>
                 <p id="title">Web Developer</p>
                 <!--button for downloading of resume file-->
-                <i class="fa-solid fa-down-to-line"></i><a href="resume.pdf" download><input id="profile-resume" type="button" name="resume" value="Resume"></input></a>
+                <a href="resume.pdf" download><button class="btn"><i class="material-icons">get_app</i> Resume</button></a>
+                <!--   <a href="resume.pdf" download><button class="btn" id="profile-resume" type="button" name="resume" value="Resume"></a>--> 
                 <!--button for the link to contact Me-->
-                <a href="#contact"><input id="profile-contact" type="button" name="contactMe" value="Contact Me"><i class="fa-solid fa-arrow-down-to-line"></i></input></a>
+                <a href="#contact"><input id="profile-contact" class="btn" type="button" name="contactMe" value="Contact Me"></a>
             </div>
         </section>
         <!--Education section-->

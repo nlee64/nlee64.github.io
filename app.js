@@ -26,3 +26,6 @@ question.addEventListener("click", function (){
 comment.addEventListener("click", function (){
     div.innerHTML="";
 });
+
+
+let resume = document.querySelector("#profile-resume");
