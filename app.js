@@ -1,10 +1,10 @@
 
 let hiring = document.querySelector("#contact-hiring");
-let radio = document.querySelector("input.radio");
+let question = document.querySelector("#contact-question");
+let comment = document.querySelector("#contact-comment");
 let div = document.querySelector("#add");
 
 hiring.addEventListener("click", function () {
-    
     let label = document.createElement("label");
     let input = document.createElement("input");
     div.appendChild(label); // insert the label in the div of the fieldset
@@ -15,5 +15,13 @@ hiring.addEventListener("click", function () {
     input.name="wage"
     input.placeholder="$";
     input.size="5";
-    input.type="text";
-}), { once : true};
+    input.type="number";
+});
+
+// delete the wage text input if another radio is selected
+question.addEventListener("click", function (){
+    div.innerHTML="";
+});
+comment.addEventListener("click", function (){
+    div.innerHTML="";
+});
