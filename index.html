@@ -1,0 +1,172 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8" />
+    <meta name="author" content="Nari Lee" />
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Welcome!</title>
+    <link rel="stylesheet" href="styles.css" type="text/css" />
+    <script src="https://kit.fontawesome.com/a076d05399.js" crossorigin="anonymous"></script>
+</head>
+
+<body>
+    <main>
+        <!--Top section-->
+        <section id="intro">
+            <div class="wrapper">
+                <img src="profile.JPG">
+                <h1>NARI LEE</h1>
+                <p id="title">Web Developer</p>
+                <!--button for downloading of resume file-->
+                <i class="fa-solid fa-down-to-line"></i><a href="resume.pdf" download><input id="profile-resume" type="button" name="resume" value="Resume"></input></a>
+                <!--button for the link to contact Me-->
+                <a href="#contact"><input id="profile-contact" type="button" name="contactMe" value="Contact Me"><i class="fa-solid fa-arrow-down-to-line"></i></input></a>
+            </div>
+        </section>
+        <!--Education section-->
+        <section id="education">
+            <div class="wrapper">
+                <h2>Education</h2>
+                <div class="flex-container">
+                    <div class="degree">
+                        <p>2021-2024<br>(expected)</p>
+                        <p class="degree-name">Diploma</p>
+                    </div>
+                    <div class="school-name">
+                        <p><span class="degree-name">Diploma</span><br>SENECA COLLEGE</p>
+                        <p>Computer Programming/Analysis</p>
+                    </div>
+                </div>
+                <div class="flex-container">
+                    <div class="degree">
+                        <p>2021-2021</p>
+                        <p class="degree-name">Certificate</p>
+                    </div>
+                    <div class="school-name">
+                        <p><span class="degree-name">Certificate</span><br>THE UNIVERSITY OF WINNIPEG</p>
+                        <p><small></small></p>
+                        <p>English Literature</p>
+                    </div>
+                </div>
+                <div class="flex-container">
+                    <div class="degree">
+                        <p>2007-2010</p>
+                        <p class="degree-name">Bachelor's Degree</p>
+                    </div>
+                    <div class="school-name">
+                        <p><span class="degree-name">Bachelor's Degree</span><br>KUNSAN NATIONAL UNIVERSITY</p>
+                        <p>Korean Language & Korean Literature<br>Philosophy</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!--contact section-->
+        <section id="contact">
+            <div class="wrapper">
+                <h2>Contact Me</h2>
+                <p>Please feel free to leave me a message!</p>
+                <div id="contact-form">
+                    <!--submission of the form-->
+                    <form action="https://httpbin.org/post" method="post">
+                        <label for="contact-name"> Name<span class="mark">*</span></label>
+                        <input id="contact-name" class="form" name="name" type="text" required placeholder="Required" aria-required="true" tabindex="1">
+                        <label for="contact-email">Email<span class="mark">*</span></label>
+                        <input id="contact-email" class="form" name="email" type="email" required placeholder="Required" tabindex="2">
+                        <label for="contact-phone">Phone number<span class="mark">*</span></label>
+                        <input id="contact-phone" class="form" name="phone" type="tel" required placeholder="000-0000-0000" tabindex="3">
+                      
+                        <label for="contact-address">Address<span class="mark">*</span></label>
+                        <input id="contact-address" class="form" name="address" type="text" autocomplete="street-address" required placeholder="Required" tabindex="4">
+                
+                        <label for="contact-city">City<span class="mark">*</span></label>
+                        <input id="contact-city" class="form" name="city" type="text" autocomplete="off" list="cities" required placeholder="Required" tabindex="5">
+                        <datalist id="cities">
+                            <option value="Toronto"></option>
+                            <option value="Ottawa"></option>
+                            <option value="Montreal"></option>
+                            <option value="Vancouver"></option>
+                            <option value="Calgary"></option>
+                            <option value="Winnipeg"></option>
+                            <option value="Regina"></option>
+                        </datalist>
+                       
+                        <label for="contact-postal">Postal Code<span class="mark">*</span></label>
+                        <input id="contact-postal" class="form" name="postal" type="text" required placeholder="R2H 0K8" pattern="^[a-zA-Z]\d[a-zA-Z][ ]?\d[a-zA-Z]\d$" tabindex="6">
+                      
+                        <fieldset>
+                            <input id="conatct-question" class="radios" name="radio" type="radio" checked tabindex="7">
+                            <label for="conatct-question">Question</label>
+                            <input id="contact-comment" class="radios" name="radio" type="radio" tabindex="8">
+                            <label for="contact-comment">Comment</label>
+                            <input id="contact-hiring" class="radios" name="radio" type="radio" tabindex="9">
+                            <label for="contact-hiring">Hiring</label>
+                            <div id="add"></div>
+                        </fieldset>
+                        <label for="contact-messgae">Description<span class="mark">*</span></label>
+                        <textarea id="contact-messgae" name="message" tabindex="11" required placeholder="Please write here..."></textarea>
+                       
+                        <div class="buttons">
+                            <input type="reset" class="btn btn-success" name="reset" value="Reset" tabindex="12">
+                            <input type="submit" class="btn btn-success" name="submit" value="Send" tabindex="11">
+                        </div>
+
+                    </form>
+                </div>
+            </div>
+        </section>
+        <section id="infographic">
+            <div class="wrapper">
+                <div id="honesty">
+                    <h2>About Me and Academic Honesty</h2>
+                    <p>
+                        I declare that my assessment is wholly my own work in accordance with Seneca Academic Policy. No part of this assessment has been copied manually or electronically from any other source (including web sites) except for the information supplied by the WEB222 instructors and / or made available in this assessment for my use. I also declare that no part of this assignment has been distributed to other students.
+                    </p>
+                    <time datetime="2022-04-13"><b>Date:</b> Apr 13, 2022</date>
+                </div>
+                <div id="info">
+                    <table>
+                        <thead>
+                            <h1>Basic Information</h1>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td><b>AGE:</b></td>
+                                <td>33</td>
+                            </tr>
+                            <tr>
+                                <td><b>EMAIL:</b></td>
+                                <td>nlee64@myseneca.ca</td>
+                            </tr>
+                            <tr>
+                                <td><b>LANGUAGE:</b></td>
+                                <td>English, Korean</td>
+                            </tr>
+                            <tr>
+                                <td><b>CLASS SECTION:</b></td>
+                                <td>NAA</td>
+                            </tr>
+                            <tr>
+                                <td><b>STUDENT ID:</b></td>
+                                <td>153021217</td>
+                            </tr>
+                            <tr>
+                                <td><b>INSTRUCTOR:</b></td>
+                                <td>Professor David Humphrey</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+        </section>
+    </main>
+    <footer>
+        <small>Copyright &copy; <time datetime="2022"></time>2022. Nari Lee. All rights reserved.</time></small>
+    </footer>
+ 
+    <!-- App JavaScript File -->
+    <script src="app.js"></script>
+</body>
+
+</html>
+

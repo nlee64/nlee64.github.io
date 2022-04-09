@@ -1,0 +1,225 @@
+/* Google fonts : Lalezar, DM Sans*/
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&family=DM+Sans:wght@500&family=Lalezar&display=swap');
+
+/* Responsive Design: On screens that are 400px or less, apply the setting */
+@media (max-width: 400px) {  
+    img{
+        object-fit: cover;
+    }
+    form input {
+        margin: 10px 0;
+    }
+    form {
+        flex-direction: column;
+        align-items: stretch;
+    }
+    #contact-form{
+        padding: 10px;
+    }
+    .flex-container{
+        margin: 0;
+    }
+    body{
+        font-size: 90%;
+    }
+} 
+
+/* place all content in the center */
+body{
+    text-align: center;
+    margin: 0 auto;
+}
+
+/* limit the maximum width for each sections' contents */
+.wrapper{
+    min-width: 200px;
+    max-width: 1024px;
+    margin: 0 auto;
+    box-sizing: border-box;
+}
+
+.flex-container{
+    border-radius: 5px;
+    box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.2);
+    display: flex;
+    gap: 10px;
+    margin: 10px 0;
+}
+/* each sections margin, padding, basic font type and font color*/
+section{
+    margin-top: 20px;
+    margin-bottom: 20px;
+    padding: 50px 20px;
+    font-family: 'DM Sans', sans-serif;
+    color: #312f2f;
+}
+
+h2{
+    font-size: 2em; /* section title font size */
+}
+
+/* profile section */
+#intro{ 
+    color: white;
+    margin-top: 0;
+    background-color: #66bfbf;
+    /*background-color: #163a5f;*/
+}
+
+#intro h1{
+    font-family: 'Lalezar', cursive;
+    margin: 0;
+    padding: 0;
+    font-size: 4em;
+    letter-spacing:5px;
+}
+#title{
+    margin-top: 0;
+    margin-bottom: 40px;
+}
+input[type="button"] {
+    background-color: #312f2f;
+    font-size: 1.3em;
+    border-radius: 40px;
+    padding: 10px 30px;
+    margin: 0 10px;
+    outline: none; /* remove default outline for button */
+}
+/* resume button design adjustment */
+#profile-resume{
+    background-color: white;
+    color: #312f2f;
+}
+/* profile image adjustment */
+img{
+    border-radius: 50%;
+    width: 250px;
+    height: 250px;
+    object-fit: cover
+}
+
+
+/* education section */
+.degree{
+    background-color: #66bfbf;
+    color: white;
+    padding: 10px;
+    max-width: 250px;
+    flex:1;
+}
+.school-name{
+    flex:1;
+    text-align: left;
+    padding: 5px 20px 15px 20px;
+    color: #424040;
+}
+.degree-name{
+    font-size: 1.5em;
+}
+
+/* contact section */
+#contact{
+    background-color: #fde9df;
+}
+
+#contact-form{
+    background-color:rgba(0, 0, 0, 0.75); /* transparent */
+    color: white;
+    border-radius: 8px;
+    margin: 0 auto;
+    padding: 25px;
+    max-width:550px;
+}
+
+.mark{
+    color: #e84a5f;
+}
+form{
+    display: grid;
+}
+
+label{
+    text-align: left;
+    margin-right: 10px; /* give a margin between radio buttons */
+    font-size: 0.8em;
+}
+#contact-wage label{
+    margin-left: 30px;
+}
+
+.radios{
+    display: flex;
+    margin-right: 0 5px;
+    outline: none;
+}
+
+input, textarea {
+    margin: 5px 5px 5px 0;
+    padding: 9px;
+    border-radius: 3px;
+    border: none;
+    background-color: #312f2f;
+    color: white;
+}
+textarea{
+    min-width: 200px;
+    height: 100px;
+    margin-bottom: 20px;
+}
+
+fieldset{
+    display: inline-flex;
+    max-width: 350px;
+    align-items: center; /* radio button & text line balancing */
+    border: none;
+}
+
+input:focus,
+textarea:focus {
+    outline: 2px solid lightblue;
+    background-color: #2a363b;
+}
+
+
+input[type="submit"],
+input[type="reset"]{
+    width: 150px;
+    font-size: 1.2em;
+    margin: 0px 10px;
+    background-color: #163a5f;
+    color: white;
+    border-radius: 20px;
+    outline: none; /* remove line of the button */
+    padding: 10px;
+}
+
+/* When moving the mouse over the submit button, add a darker green color */
+input[type="submit"]:hover,
+input[type="reset"]:hover,
+input[type="button"]:hover {
+    background-color: #5f6264; /* hover background color */
+    box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.4); /* shadow effect for the buttons*/
+    color: white;
+}
+
+/* infographic section */
+#infographic {
+    text-align: left;
+    display: inline-flex;
+    flex-grow: 4;
+}
+
+#honest, #info {
+    flex:1;
+    text-align: left;
+}
+
+table {
+    width:40%
+}
+
+
+footer {
+    font-family:'DM Sans', sans-serif;
+    color: #312f2f;
+}
