@@ -203,22 +203,16 @@ input[type="button"]:hover {
 }
 
 /* infographic section */
-#infographic {
-    text-align: left;
-    display: inline-flex;
-    flex-grow: 4;
-}
 
-#honest, #info {
+#honesty, #info {
+    text-align: left;
     flex:1;
-    text-align: left;
+    padding: 20px;
+    margin: 0;
 }
-
 table {
-    width:40%
+    width:50%
 }
-
-
 footer {
     font-family:'DM Sans', sans-serif;
     color: #312f2f;
