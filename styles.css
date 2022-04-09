@@ -18,11 +18,13 @@
     }
     .flex-container{
         margin: 0;
+        flex-direction: column;
     }
     body{
         font-size: 90%;
     }
 } 
+
 
 /* place all content in the center */
 body{
@@ -207,11 +209,16 @@ input[type="button"]:hover {
 #honesty, #info {
     text-align: left;
     flex:1;
-    padding: 20px;
-    margin: 0;
+    padding-left: 20px;
+    padding-bottom: 20px;
+    margin-left: 10px;
+}
+h3{
+    font-size: 1.5em;
 }
 table {
-    width:50%
+    width:100%;
+    height: 200px;
 }
 footer {
     font-family:'DM Sans', sans-serif;
