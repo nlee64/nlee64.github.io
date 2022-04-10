@@ -106,6 +106,7 @@ input[type="button"],
     background-color: white; /* white background */
     color: #424040; /* grey text */
     border: white;
+    vertical-align: middle;
 }
 
 i{
