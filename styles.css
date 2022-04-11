@@ -30,12 +30,12 @@
     }
    
     body{
-        font-size: 85%;
+        font-size: 90%;
     }
 } 
 @media (max-width: 600px) {  
     .flex-container-info{
-        flex-direction: column;
+        flex-direction: column-reverse;
     }
 }
 
