@@ -4,55 +4,51 @@
 @import url('https://fonts.googleapis.com/icon?family=Material+Icons');
 
 /* Responsive Design: On screens that are 400px or less, apply the setting */
+/* small size screen of phone */
 @media (max-width: 300px){
     .flex-container{
         flex-direction: column;
         align-items: stretch;
     }
 }
-
+/* bigger size screen of phone */
 @media (max-width: 400px) {  
-    img{
-        object-fit: cover;
-    }
     form input {
-        margin: 10px 0;
+        margin: 10px 0; /* the margin between reset and send button*/
     }
     form {
         flex-direction: column;
         align-items: stretch;
     }
-    #contact-form{
-        padding: 10px;
-    }
     .flex-container{
         margin: 0;
     }
-   
     body{
-        font-size: 90%;
+        font-size: 90%; /* reduce font size of the whole page */
     }
 } 
+/* bigger size screen of phone */
 @media (max-width: 600px) {  
     .flex-container-info{
-        flex-direction: column-reverse;
+        flex-direction: column-reverse; /* apply flex display with reverse order for info section */
     }
 }
 
 /* place all content in the center */
 body{
-    text-align: center;
-    margin: 0 auto;
+    text-align: center; /* place all content in the middle */
+    margin: 0 auto; 
 }
 
 /* limit the maximum width for each sections' contents */
 .wrapper{
     min-width: 200px;
-    max-width: 1024px;
+    max-width: 1024px; 
     margin: 0 auto;
-    box-sizing: border-box;
+    box-sizing: border-box; /* every elements are forced to be within the wrapper size */
 }
 
+/* flex items */
 .flex-container{
     border-radius: 5px;
     box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.2);
@@ -71,7 +67,6 @@ section{
 
 h2{
     font-size: 2em; /* section title font size */
-    padding: 0;
 }
 
 /* profile section */
@@ -81,8 +76,9 @@ h2{
     background-color: #66bfbf;
 }
 
+/* profile name */
 #intro h1{
-    font-family: 'Lalezar', cursive;
+    font-family: 'Lalezar', cursive; /* font type */
     margin: 0;
     padding: 0;
     font-size: 3.5em;
@@ -93,44 +89,31 @@ h2{
     font-size: 1.5em;
     margin-bottom: 40px;
 }
-input[type="button"],
+
 .btn {
-    background-color: #312f2f;
-    color: white;
+    background-color: white;
+    color: #312f2f;
     font-size: 1.3em;
     border-radius: 40px;
     padding: 10px 30px;
     margin: 0 10px;
-    outline: none; /* remove default outline for button */
-}
-
-.btn{
-    background-color: white; /* white background */
-    color: #424040; /* grey text */
-    border: white;
-    vertical-align: middle;
+    border: none; /* remove default outline for button */
 }
 
 i{
     vertical-align: middle;
-    font-size: 0.8em;
-}
-
-/* resume button design adjustment */
-#profile-resume{
-    background-color: white;
-    color: #312f2f;
+    font-size: 0.6em;
 }
 
 /* profile image adjustment */
 img{
     margin-top: 20px;
+    margin-bottom: 20px;
     border-radius: 50%;
     width: 250px;
     height: 250px;
     object-fit: cover
 }
-
 
 /* education section */
 .degree{
@@ -164,9 +147,11 @@ img{
     max-width:550px;
 }
 
+/* required * mark color */
 .mark{
     color: #e84a5f;
 }
+
 form{
     display: grid;
 }
@@ -231,7 +216,6 @@ input[type="reset"]{
 /* When moving the mouse over the submit button, add a darker green color */
 input[type="submit"]:hover,
 input[type="reset"]:hover,
-input[type="button"]:hover,
 .btn:hover {
     background-color: #5f6264; /* hover background color */
     box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.4); /* shadow effect for the buttons*/

@@ -14,7 +14,7 @@ hiring.addEventListener("click", function () {
     label.innerHTML = "Hourly rate";
     input.id = "contact-wage";
     input.name="wage"
-    input.placeholder="$";
+    input.placeholder="CAD";
     input.size="5";
     input.type="number";
 });
