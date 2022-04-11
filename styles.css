@@ -1,5 +1,7 @@
 /* Google fonts : Lalezar, DM Sans*/
 @import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&family=DM+Sans:wght@500&family=Lalezar&display=swap');
+/* Google icon library*/
+@import url('https://fonts.googleapis.com/icon?family=Material+Icons');
 
 /* Responsive Design: On screens that are 400px or less, apply the setting */
 @media (max-width: 300px){
