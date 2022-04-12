@@ -101,6 +101,11 @@ h2{
     margin: 0 10px;
     border: none; /* remove default outline for button */
 }
+/* resume button colour */
+#contact-me{
+    background-color: #312f2f;
+    color: white;
+}
 
 /* download icon */
 i {
@@ -168,6 +173,7 @@ label{
     margin-left: 30px;
 }
 
+/* div that holds hourly rate inside */
 #add{
     text-align: left;
 }
@@ -177,7 +183,7 @@ label{
     margin-right: 0 5px;
     outline: none;
 }
-
+/* form text area */
 input, textarea {
     margin: 5px 5px 5px 0;
     padding: 9px;
@@ -186,19 +192,20 @@ input, textarea {
     background-color: #312f2f;
     color: white;
 }
+/* description area */
 textarea{
     min-width: 200px;
     height: 100px;
     margin-bottom: 20px;
 }
-
+/* radio buttons container */
 fieldset{
     display: inline-flex;
     max-width: 350px;
     align-items: center; /* radio button & text line balancing */
     border: none;
 }
-
+/* when the object is selected to be typed */
 input:focus,
 textarea:focus {
     outline: 2px solid lightblue;
@@ -220,7 +227,8 @@ input[type="reset"]{
 /* When moving the mouse over the submit button, add a darker green color */
 input[type="submit"]:hover,
 input[type="reset"]:hover,
-.btn:hover {
+.btn:hover,
+#contact-me:hover {
     background-color: #5f6264; /* hover background color */
     box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.4); /* shadow effect for the buttons*/
     color: white;

@@ -28,4 +28,4 @@ comment.addEventListener("click", function (){
 });
 
 
-let resume = document.querySelector("#profile-resume");
+

@@ -69,17 +69,17 @@
                     <!--submission of the form-->
                     <form action="https://httpbin.org/post" method="post">
                         <label for="contact-name"> Name<span class="mark">*</span></label>
-                        <input id="contact-name" class="form" name="name" type="text" required placeholder="Required" aria-required="true" tabindex="1">
+                        <input id="contact-name" class="form" name="name" type="text" required placeholder="Required" pattern="^[a-zA-Z]+" tabindex="1">
                         <label for="contact-email">Email<span class="mark">*</span></label>
                         <input id="contact-email" class="form" name="email" type="email" required placeholder="Required" tabindex="2">
                         <label for="contact-phone">Phone number<span class="mark">*</span></label>
-                        <input id="contact-phone" class="form" name="phone" type="tel" required placeholder="000-0000-0000" tabindex="3">
+                        <input id="contact-phone" class="form" name="phone" type="tel" required placeholder="Required" tabindex="3">
                       
-                        <label for="contact-address">Address<span class="mark">*</span></label>
-                        <input id="contact-address" class="form" name="address" type="text" autocomplete="street-address" required placeholder="Required" tabindex="4">
+                        <label for="contact-address">Address</label>
+                        <input id="contact-address" class="form" name="address" type="text" autocomplete="street-address" placeholder="Optional" tabindex="4">
                 
-                        <label for="contact-city">City<span class="mark">*</span></label>
-                        <input id="contact-city" class="form" name="city" type="text" autocomplete="off" list="cities" required placeholder="Required" tabindex="5">
+                        <label for="contact-city">City</label>
+                        <input id="contact-city" class="form" name="city" type="text" autocomplete="off" list="cities" placeholder="Optional" tabindex="5">
                         <datalist id="cities">
                             <option value="Toronto"></option>
                             <option value="Ottawa"></option>
@@ -90,8 +90,8 @@
                             <option value="Regina"></option>
                         </datalist>
                        
-                        <label for="contact-postal">Postal Code<span class="mark">*</span></label>
-                        <input id="contact-postal" class="form" name="postal" type="text" required placeholder="R2H 0K8" pattern="^[a-zA-Z]\d[a-zA-Z][ ]?\d[a-zA-Z]\d$" tabindex="6">
+                        <label for="contact-postal">Postal Code</label>
+                        <input id="contact-postal" class="form" name="postal" type="text" placeholder="Optional (R2H 0K8)" pattern="^[a-zA-Z]\d[a-zA-Z][ ]?\d[a-zA-Z]\d$" tabindex="6">
                       
                         <fieldset>
                             <input id="contact-question" class="radios" name="radio" type="radio" checked tabindex="7">
@@ -123,7 +123,7 @@
                         <p>
                             I declare that my assessment is wholly my own work in accordance with Seneca Academic Policy. No part of this assessment has been copied manually or electronically from any other source (including web sites) except for the information supplied by the WEB222 instructors and / or made available in this assessment for my use. I also declare that no part of this assignment has been distributed to other students.
                         </p>
-                        <time datetime="2022-04-13"><b>Date:</b> Apr 13, 2022</date>
+                        <time datetime="2022-04-12"><b>Date:</b> Apr 12, 2022</date>
                     </div>
                     <div id="info">
                         <table>
